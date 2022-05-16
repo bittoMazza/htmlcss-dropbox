@@ -22,6 +22,11 @@ img{
     margin: 0 auto;
 }
 
+.intro-container{
+    position: relative;
+    bottom: -80px;
+}
+
 .small-box{
     width: 30%;
 }
@@ -31,7 +36,9 @@ img{
     width: 70%;
 }
 
-
+.fa-check{
+    color: #0061ff;
+}
 
 .circle-select{
     width: 20px;
@@ -90,7 +97,7 @@ nav ul li a{
 
 .introduction{
     background-color: #b4d0e7;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 
@@ -98,6 +105,7 @@ nav ul li a{
 
 .intro-text{
     padding: 50px 0 0 0;
+    display: flex;
     position: relative;
 }
 
@@ -115,14 +123,8 @@ nav ul li a{
 }
 
 .left-column-intro :last-child{
-    margin: 50px 0 20px 0;
+    margin: 70px 0 0 0;
     font-size: 50px;
-}
-
-.right-column-intro{
-    position: absolute;
-    top:50px;
-    right:0%;
 }
 
 .selection-business{
@@ -136,7 +138,6 @@ nav ul li a{
 
 .business-plan{
     padding-top: 200px;
-    height: 100vh;
 }
 
 .business-plan .small-container h2{
@@ -147,7 +148,7 @@ nav ul li a{
 
 
 .cards{
-    margin-top: 50px;
+    margin:50px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -155,6 +156,7 @@ nav ul li a{
 .card{
     border: solid 1px rgb(211, 208, 208);
     width: 30%;
+    padding: 0 0 30px 0;
 }
 
 .card-content{
@@ -197,11 +199,13 @@ nav ul li a{
     margin: 15px 0;
 }
 
+/* hr per separare parti  */
 .separator{
     width: 20%;
     margin: 50px 0px;
 }
 
-.fa-check{
-    color: #0061ff;
+.enterprise{
+    width: 100%;
+    border: solid 1px rgb(211, 208, 208);
 }
