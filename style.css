@@ -1,5 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0.800;1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+.big-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.small-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.small-box{
+    width: 30%;
+}
+
+
+.big-box{
+    width: 70%;
+}
+
+
+
+.circle-select{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: solid 5px #0061ff;
+    display: inline-block;
+}
+
+
+.fa-arrow-down{
+    color: black;
+}
+
+
+.logo{
+    vertical-align: middle;
+}
+
+h1{
+    font-size: 75px;
+    font-weight: 800;
+}
+.nav-flex{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.first-btn-type{
+    background-color: #0061ff;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.introduction{
+    background-color: #b4d0e7;
+    padding-top: 150px;
+}
+
+
+
+
+.intro-text{
+    padding: 50px 0 0 0;
+    position: relative;
+}
+
+.left-column-intro a{
+    margin: 20px 0;
+}
+
+.left-column-intro p{
+    line-height: 1.5rem;
+}
+
+.left-column-intro span{
+    display:block;
+    margin: 15px 0;
+}
+
+.left-column-intro :last-child{
+    margin: 50px 0 20px 0;
+    font-size: 50px;
+}
+
+.right-column-intro{
+    position: absolute;
+    top:50px;
+    right:0%;
+}
+
+.selection-business{
+    display: inline-block;
+    margin: 10px 30px 0 0;
+}
+
+.circle-select.not-selected{
+    border: solid 1px grey;
+}
+
+.business-plan{
+    padding-top: 200px;
+    height: 100vh;
+}
+
+.business-plan .small-container h2{
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+
+
+.cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    border: solid 1px rgb(211, 208, 208);
+    width: 30%;
+}
+
+.card-content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title-container{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: solid 1px rgb(211, 208, 208);
+}
+.card-content h3{
+    padding: 30px 0px 20px 0;
+}
+
+.card-content ul li{
+    padding: 5px;
+    list-style: none;
+}
+
+.card-content a{
+    margin:20px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.price{
+    font-weight: bold;
+}
+
+.subscription{
+    color: grey;
+    margin-bottom: 40px;
+}
+
+.info{
+    display: flex;
+    margin: 15px 0;
+}
+
+.separator{
+    width: 20%;
+    margin: 50px 0px;
+}
+
+.fa-check{
+    color: #0061ff;
 }
