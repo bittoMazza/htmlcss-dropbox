@@ -208,4 +208,37 @@ nav ul li a{
 .enterprise{
     width: 100%;
     border: solid 1px rgb(211, 208, 208);
+    margin-bottom: 150px;
+}
+
+.enterprise .card-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-partner{
+    display: flex;
+}
+
+.flex-partner .right-column-partner{
+    padding: 40px 40px 0 40px
+}
+
+.flex-partner .right-column-partner p{
+    padding: 30px 0 40px 0;
+}
+ 
+.left-column-partner{
+    width: 60%;
+}
+
+.right-column-partner{
+    width: 40%;
+}
+
+.right-column-partner a{
+    text-decoration: none;
+    color: black;
+    border: solid 1px black;
+    padding: 10px 15px;
 }
