@@ -334,7 +334,7 @@ nav ul li a{
    position: relative;
 }
 .collage-block:hover{
-    box-shadow:inset 0 0 0px 10px ;
+    box-shadow:inset 0px 0 0px 10px rgba(0,0,0,0.2); 
 }
 .block-img{ 
     position: absolute;
@@ -352,7 +352,7 @@ nav ul li a{
 
 .central-collage-column{
     width:calc(100vw / 3) ;
-    background-color: #ddd;
+    background-color: #eeee;
     height:calc(100vw / 3);
     overflow: auto;
 }
@@ -418,6 +418,10 @@ nav ul li a{
 
 .customers-collage .small-container .column-60-w h2{
     color: maroon;
+}
+
+.block-img img{
+    filter: invert(100%); /* inverte colore immagine */
 }
 
 /* Fine Sezione Clienti */
