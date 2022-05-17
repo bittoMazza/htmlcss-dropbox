@@ -4,6 +4,8 @@
 
 :root{
     --main-color:#0061ff;
+    --basic-border: solid 1px black;
+    --second-border-style: solid 1px rgb(211, 208, 208);
 }
 
 *{
@@ -13,10 +15,22 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+i{
+    padding-right: 5px;
+}
+
+
 img{
     width: 100%;
 }
 
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+/* Container per strutture */
 .big-container{
     max-width: 1200px;
     margin: 0 auto;
@@ -36,13 +50,13 @@ img{
 }
 
 .w-30-box{
-    max-width: 30%;
+    width: 30%;
 }
-
 
 .w-70-box{
-    max-width: 70%;
+    width: 70%;
 }
+/* Container per strutture */
 
 .ft-40{
     font-size: 40px;
@@ -61,15 +75,28 @@ img{
     text-align: right;
 }
 
+.flex-container{
+    display: flex;
+}
 
+.flex-b{
+    justify-content: space-between;
+}
+
+/* ------------------------------------ */
+
+/*  Header e prima sezione */
 .intro-container{
     position: relative;
     bottom: -80px;
 }
 
-
 .fa-check{
     color:var(--main-color);
+}
+
+.fa-arrow-down{
+    color: black;
 }
 
 .circle-select{
@@ -79,17 +106,6 @@ img{
     border: solid 5px var(--main-color);
     display: inline-block;
 }
-
-header{
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
-
-.fa-arrow-down{
-    color: black;
-}
-
 
 
 .logo{
@@ -110,11 +126,13 @@ h1{
     align-items: center;
     padding: 10px;
 }
+nav ul li,nav ul li a,.first-btn-type,.customers-collage .small-container .column-40-w a,.partner .small-container .column-40-w a{
+    padding: 10px 15px;
+}
 
 nav ul li{
     list-style: none;
     display: inline-block;
-    padding: 10px 15px;
 }
 
 nav ul li a{
@@ -127,15 +145,12 @@ nav ul li a{
     color: white;
     display: inline-block;
     text-decoration: none;
-    padding: 10px 15px;
 }
 
 .introduction{
     background-color: #b4d0e7;
-    padding-top: 100px;
+    padding-top: 80px;
 }
-
-
 
 
 .intro-text{
@@ -162,13 +177,17 @@ nav ul li a{
     font-size: 50px;
 }
 
+/* Fine header e prima sezione */
+
+
+/* Sezione Business plan */
 .selection-business{
     display: inline-block;
     margin: 10px 30px 0 0;
 }
 
 .circle-select.not-selected{
-    border: solid 1px grey;
+    border:var(--second-border-style);
 }
 
 .business-plan{
@@ -177,10 +196,7 @@ nav ul li a{
 
 .business-plan .small-container h2{
     margin-bottom: 40px;
-    font-size: 40px;
 }
-
-
 
 .cards{
     margin-top: 50px;
@@ -189,8 +205,8 @@ nav ul li a{
 }
 
 .card{
-    border: solid 1px rgb(211, 208, 208);
-    width: 30%;
+    border:var(--second-border-style);
+    width:30%;
 }
 
 .card-content{
@@ -202,7 +218,7 @@ nav ul li a{
 .title-container{
     text-align: center;
     padding: 10px 0;
-    border-bottom: solid 1px rgb(211, 208, 208);
+    border-bottom:var(--second-border-style)
 }
 .card-content h3{
     padding:0 0 20px 0;
@@ -219,6 +235,9 @@ nav ul li a{
     text-align: center;
 }
 
+.enterprise .card-content .w-30-box a{
+    margin:0;
+}
 
 .price{
     font-weight: bold;
@@ -238,11 +257,12 @@ nav ul li a{
 .separator{
     width: 20%;
     margin: 50px 0px;
+    border: var(--second-border-style);
 }
 
 .enterprise{
     width: 100%;
-    border: solid 1px rgb(211, 208, 208);
+    border:var(--second-border-style);
     margin-top: 50px;
 }
 
@@ -250,16 +270,14 @@ nav ul li a{
     display: flex;
     justify-content: space-between;
 }
+
+
+/* Fine sezione Business plan */
+
+/* Sezione Partner */
+
 .partner{
     padding: 150px 0px;
-}
-
-.flex-container{
-    display: flex;
-}
-
-.flex-b{
-    justify-content: space-between;
 }
 
 .partner .flex-container .column-40-w{
@@ -270,14 +288,15 @@ nav ul li a{
     padding: 30px 0 40px 0;
 }
  
-
-
 .partner .small-container .column-40-w a{
     text-decoration: none;
     color: black;
-    border: solid 1px black;
-    padding: 10px 15px;
+    border:var(--basic-border);
 }
+
+/* Fine sezione Partner */
+
+/* Sezione info Dropbox Business */
 
 .dropbox-business .small-container .cards{
     flex-wrap: wrap;
@@ -292,20 +311,19 @@ nav ul li a{
     padding-bottom: 50px;
 }
 
+/* Fine sezione info Dropbox Business */
 
-
+/* Sezione Clienti */
 
 .dropbox-customers{
-    padding: 100px 0 150px 0;
+    padding: 120px 0 150px 0;
 }
 
 .collage-block{
    height: 20vh;
    width: 50%;
    position: relative;
-   background-color: rgb(184, 160, 160);
 }
-
 
 .block-img{ 
     position: absolute;
@@ -313,6 +331,7 @@ nav ul li a{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 .col-block1{
     background-color: bisque;
@@ -339,6 +358,8 @@ nav ul li a{
 .col-block8{
     background-color: rgb(101, 111, 158);
 }
+
+
 
 .left-collage-column,.right-collage-column{
     width: calc(100% / 3);
@@ -383,35 +404,41 @@ nav ul li a{
     background-color: white;
     border: none;
     display: inline-block;
-    padding: 10px 15px;
 }
 
 .customers-collage .small-container .column-60-w h2{
     color: maroon;
 }
 
+/* Fine Sezione Clienti */
+
+/* Sezione Faq */
+
 .faq{
     padding: 150px 0;
 }
 
 .faq-container{
-    padding: 30px 0;
-    border-top: solid 1px black;
+    padding-bottom: 10px;
+    border-top:var(--basic-border);
+}
+.faq-container h4{
+    padding: 30px 0; 
 }
 
 .last-faq-cont{
-    border-bottom: solid 1px black;
+    border-bottom:var(--basic-border)
 }
 
 .faq-container p{
     display: none;
-    transition: 2s;
 }
 
 .faq-container:hover p{
     display: inline;
 }
 
+/* Fine sezione faq */
 
 footer{
     background-color: black;
