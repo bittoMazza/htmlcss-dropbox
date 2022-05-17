@@ -315,13 +315,17 @@ nav ul li a{
 
 /* Sezione Clienti */
 
+
+
 .dropbox-customers{
     padding: 120px 0 150px 0;
 }
 
+.container-collage{
+    height:calc(100vw / 3);
+}
 .collage-block{
-   height: 20vh;
-   width: 50%;
+    width: 50%;
    position: relative;
 }
 
@@ -332,6 +336,19 @@ nav ul li a{
     transform: translate(-50%, -50%);
 }
 
+.left-collage-column,.right-collage-column{
+    height:calc(100vw / 3);
+    width:calc(100vw / 3) ;
+    display: flex;
+    flex-wrap:wrap ;
+}
+
+.central-collage-column{
+    width:calc(100vw / 3) ;
+    background-color: #aaa;
+    height:calc(100vw / 3);
+    overflow: auto;
+}
 
 .col-block1{
     background-color: bisque;
@@ -359,20 +376,6 @@ nav ul li a{
     background-color: rgb(101, 111, 158);
 }
 
-
-
-.left-collage-column,.right-collage-column{
-    width: calc(100% / 3);
-    display: flex;
-    flex-wrap:wrap ;
-}
-
-.central-collage-column{
-    width:calc(100% / 3) ;
-    background-color: #aaa;
-    height: 40vh;
-    overflow: auto;
-}
 
 .container-collage{
     display: flex;
