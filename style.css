@@ -126,9 +126,15 @@ h1{
     align-items: center;
     padding: 10px;
 }
-nav ul li,nav ul li a,.first-btn-type,.customers-collage .small-container .column-40-w a,.partner .small-container .column-40-w a{
+.first-btn-type,.customers-collage .small-container .column-40-w a,.partner .small-container .column-40-w a{
     padding: 10px 15px;
 }
+
+nav ul li,nav ul li a{
+    padding: 10px 10px;
+}
+
+
 
 nav ul li{
     list-style: none;
@@ -315,20 +321,21 @@ nav ul li a{
 
 /* Sezione Clienti */
 
-
+.customers-collage{
+    width: 100%;
+}
 
 .dropbox-customers{
     padding: 120px 0 150px 0;
 }
 
-.container-collage{
-    height:calc(100vw / 3);
-}
 .collage-block{
     width: 50%;
    position: relative;
 }
-
+.collage-block:hover{
+    box-shadow:inset 0 0 0px 10px ;
+}
 .block-img{ 
     position: absolute;
     top: 50%;
@@ -345,7 +352,7 @@ nav ul li a{
 
 .central-collage-column{
     width:calc(100vw / 3) ;
-    background-color: #aaa;
+    background-color: #ddd;
     height:calc(100vw / 3);
     overflow: auto;
 }
@@ -441,10 +448,30 @@ nav ul li a{
     display: inline;
 }
 
+.fa-angle-up{
+    display: none;
+}
+
+.faq-container:hover .fa-angle-up{
+    display: inline;
+}
+
+.faq-container:hover .fa-angle-down{
+    display: none;
+}
+
+.angle{ 
+    padding-right: 20px;
+}
+.flex-align-i{
+    align-items: center;
+}
+
 /* Fine sezione faq */
 
 footer{
     background-color: black;
+    color: white;
 }
 
 footer .big-container .flex-container ul li{
@@ -466,10 +493,6 @@ footer .big-container{
     padding: 70px 0 50px 0; 
 }
 
-.end-footer{
-    color: white;
-}
-
 footer .big-container .separator{
     width: 10%;
 }
@@ -479,3 +502,4 @@ select{
     border: none;
     color: white;
 }
+
