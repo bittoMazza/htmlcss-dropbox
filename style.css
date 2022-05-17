@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0.800;1,300&display=swap');
 
+
+:root{
+    --main-color:#0061ff;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -22,36 +27,69 @@ img{
     margin: 0 auto;
 }
 
+.column-60-w{
+    width: 60%;
+}
+
+.column-40-w{
+    width: 40%;
+}
+
+.w-30-box{
+    max-width: 30%;
+}
+
+
+.w-70-box{
+    max-width: 70%;
+}
+
+.ft-40{
+    font-size: 40px;
+}
+
+.pad-t-40{
+    padding:40px 0 0 0;
+}
+
+
+.padd-30-b{
+    padding-bottom: 30px;
+}
+
+.align-r{
+    text-align: right;
+}
+
+
 .intro-container{
     position: relative;
     bottom: -80px;
 }
 
-.small-box{
-    width: 30%;
-}
-
-
-.big-box{
-    width: 70%;
-}
 
 .fa-check{
-    color: #0061ff;
+    color:var(--main-color);
 }
 
 .circle-select{
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    border: solid 5px #0061ff;
+    border: solid 5px var(--main-color);
     display: inline-block;
 }
 
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
 
 .fa-arrow-down{
     color: black;
 }
+
 
 
 .logo{
@@ -65,8 +103,6 @@ h1{
 .nav-flex{
     background-color: white;
     width: 100%;
-    position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     display: flex;
@@ -84,11 +120,10 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: black;
-    padding: 10px;
 }
 
 .first-btn-type{
-    background-color: #0061ff;
+    background-color: var(--main-color);
     color: white;
     display: inline-block;
     text-decoration: none;
@@ -137,7 +172,7 @@ nav ul li a{
 }
 
 .business-plan{
-    padding-top: 200px;
+    padding-top: 180px;
 }
 
 .business-plan .small-container h2{
@@ -148,7 +183,7 @@ nav ul li a{
 
 
 .cards{
-    margin:50px 0px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -156,12 +191,12 @@ nav ul li a{
 .card{
     border: solid 1px rgb(211, 208, 208);
     width: 30%;
-    padding: 0 0 30px 0;
 }
 
 .card-content{
-    width: 80%;
+    width: calc(100% - 60px);
     margin: 0 auto;
+    padding: 30px 0;
 }
 
 .title-container{
@@ -170,7 +205,7 @@ nav ul li a{
     border-bottom: solid 1px rgb(211, 208, 208);
 }
 .card-content h3{
-    padding: 30px 0px 20px 0;
+    padding:0 0 20px 0;
 }
 
 .card-content ul li{
@@ -208,37 +243,209 @@ nav ul li a{
 .enterprise{
     width: 100%;
     border: solid 1px rgb(211, 208, 208);
-    margin-bottom: 150px;
+    margin-top: 50px;
 }
 
 .enterprise .card-content{
     display: flex;
     justify-content: space-between;
 }
+.partner{
+    padding: 150px 0px;
+}
 
-.flex-partner{
+.flex-container{
     display: flex;
 }
 
-.flex-partner .right-column-partner{
+.flex-b{
+    justify-content: space-between;
+}
+
+.partner .flex-container .column-40-w{
     padding: 40px 40px 0 40px
 }
 
-.flex-partner .right-column-partner p{
+.partner .flex-container .column-40-w p{
     padding: 30px 0 40px 0;
 }
  
-.left-column-partner{
-    width: 60%;
-}
 
-.right-column-partner{
-    width: 40%;
-}
 
-.right-column-partner a{
+.partner .small-container .column-40-w a{
     text-decoration: none;
     color: black;
     border: solid 1px black;
     padding: 10px 15px;
+}
+
+.dropbox-business .small-container .cards{
+    flex-wrap: wrap;
+}
+
+.card-text h3{
+    padding:10px 0  25px 0;
+}
+
+.dropbox-business .small-container .cards .card{
+    border: none;
+    padding-bottom: 50px;
+}
+
+
+
+
+.dropbox-customers{
+    padding: 100px 0 150px 0;
+}
+
+.collage-block{
+   height: 20vh;
+   width: 50%;
+   position: relative;
+   background-color: rgb(184, 160, 160);
+}
+
+
+.block-img{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col-block1{
+    background-color: bisque;
+}
+
+.col-block2{
+    background-color: rgb(141, 95, 40);
+}
+.col-block3{
+    background-color: rgb(11, 79, 105);
+}
+.col-block4{
+    background-color: rgb(184, 93, 156);
+}
+.col-block5{
+    background-color: bisque;
+}
+.col-block6{
+    background-color: rgb(194, 72, 63);
+}
+.col-block7{
+    background-color: rgb(43, 148, 78);
+}
+.col-block8{
+    background-color: rgb(101, 111, 158);
+}
+
+.left-collage-column,.right-collage-column{
+    width: calc(100% / 3);
+    display: flex;
+    flex-wrap:wrap ;
+}
+
+.central-collage-column{
+    width:calc(100% / 3) ;
+    background-color: #aaa;
+    height: 40vh;
+    overflow: auto;
+}
+
+.container-collage{
+    display: flex;
+    width: 100%;
+}
+
+.central-col-content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.central-col-logo{
+    width: 40%;
+}
+
+.customers-collage{
+    background-color: #b4d0e7;
+}
+
+
+.customers-collage .small-container{
+    padding: 100px 0 ;
+}
+
+
+.customers-collage .small-container .column-40-w a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.customers-collage .small-container .column-60-w h2{
+    color: maroon;
+}
+
+.faq{
+    padding: 150px 0;
+}
+
+.faq-container{
+    padding: 30px 0;
+    border-top: solid 1px black;
+}
+
+.last-faq-cont{
+    border-bottom: solid 1px black;
+}
+
+.faq-container p{
+    display: none;
+    transition: 2s;
+}
+
+.faq-container:hover p{
+    display: inline;
+}
+
+
+footer{
+    background-color: black;
+}
+
+footer .big-container .flex-container ul li{
+    padding: 8px 0;
+    list-style: none;
+}
+
+footer .big-container .flex-container ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .big-container .flex-container ul li:first-child{
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+footer .big-container{
+    padding: 70px 0 50px 0; 
+}
+
+.end-footer{
+    color: white;
+}
+
+footer .big-container .separator{
+    width: 10%;
+}
+
+select{
+    background-color: black;
+    border: none;
+    color: white;
 }
