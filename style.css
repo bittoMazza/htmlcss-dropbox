@@ -24,11 +24,6 @@ img{
     width: 100%;
 }
 
-header{
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
 
 /* Container per strutture */
 .big-container{
@@ -86,6 +81,13 @@ header{
 /* ------------------------------------ */
 
 /*  Header e prima sezione */
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
 .intro-container{
     position: relative;
     bottom: -80px;
@@ -100,6 +102,7 @@ header{
 }
 
 .circle-select{
+    vertical-align: middle;
     width: 20px;
     height: 20px;
     border-radius: 100%;
@@ -116,6 +119,30 @@ h1{
     font-size: 75px;
     font-weight: 800;
 }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+
+  .dropdown li a:hover{
+      background-color:#ccc ;
+  }
+
+
 .nav-flex{
     background-color: white;
     width: 100%;
@@ -126,6 +153,7 @@ h1{
     align-items: center;
     padding: 10px;
 }
+
 .first-btn-type,.customers-collage .small-container .column-40-w a,.partner .small-container .column-40-w a{
     padding: 10px 15px;
 }
@@ -133,6 +161,8 @@ h1{
 nav ul li,nav ul li a{
     padding: 10px 10px;
 }
+
+
 
 
 
@@ -151,8 +181,11 @@ nav ul li a{
     color: white;
     display: inline-block;
     text-decoration: none;
+    transition: 0.5s;
 }
-
+.first-btn-type:hover{
+    opacity: 0.8;
+}
 .introduction{
     background-color: #b4d0e7;
     padding-top: 80px;
@@ -231,7 +264,7 @@ nav ul li a{
 }
 
 .card-content ul li{
-    padding: 5px;
+    padding: 10px 0;
     list-style: none;
 }
 
@@ -256,7 +289,6 @@ nav ul li a{
 
 .info{
     display: flex;
-    margin: 15px 0;
 }
 
 /* hr per separare parti  */
@@ -283,7 +315,7 @@ nav ul li a{
 /* Sezione Partner */
 
 .partner{
-    padding: 150px 0px;
+    padding-top: 150px;
 }
 
 .partner .flex-container .column-40-w{
@@ -303,6 +335,10 @@ nav ul li a{
 /* Fine sezione Partner */
 
 /* Sezione info Dropbox Business */
+
+.dropbox-business{
+    padding-top: 150px;
+}
 
 .dropbox-business .small-container .cards{
     flex-wrap: wrap;
@@ -334,7 +370,7 @@ nav ul li a{
    position: relative;
 }
 .collage-block:hover{
-    box-shadow:inset 0px 0 0px 10px rgba(0,0,0,0.2); 
+    box-shadow:inset 0px 0 0px 10px rgba(255,255,255,0.2); 
 }
 .block-img{ 
     position: absolute;
@@ -358,7 +394,7 @@ nav ul li a{
 }
 
 .col-block1{
-    background-color: bisque;
+    background-color: rgb(215, 218, 47);
 }
 
 .col-block2{
@@ -421,7 +457,7 @@ nav ul li a{
 }
 
 .block-img img{
-    filter: invert(100%); /* inverte colore immagine */
+    filter: invert(1); /* inverte colore immagine */
 }
 
 /* Fine Sezione Clienti */
@@ -433,11 +469,11 @@ nav ul li a{
 }
 
 .faq-container{
-    padding-bottom: 10px;
+    padding:30px 0 20px 0;
     border-top:var(--basic-border);
 }
 .faq-container h4{
-    padding: 30px 0; 
+    margin-bottom: 10px; 
 }
 
 .last-faq-cont{
@@ -466,6 +502,7 @@ nav ul li a{
 
 .angle{ 
     padding-right: 20px;
+    margin-bottom: 10px;
 }
 .flex-align-i{
     align-items: center;
